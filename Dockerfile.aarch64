@@ -1,4 +1,6 @@
 FROM lsiobase/ubuntu:arm64v8-bionic
+COPY qemu-aarch64-static /usr/bin/
+
 
 # set version label
 ARG BUILD_DATE
