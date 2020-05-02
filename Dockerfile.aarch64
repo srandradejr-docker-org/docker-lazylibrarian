@@ -5,7 +5,7 @@ ARG BUILD_DATE
 ARG VERSION
 ARG LAZYLIBRARIAN_COMMIT
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
-LABEL maintainer="chbmb"
+LABEL maintainer="scambra"
 
 RUN \
  echo "**** install build packages ****" && \
@@ -21,6 +21,7 @@ RUN \
 	python3-minimal \
 	python3-openssl \
 	unrar \
+	calibre-bin \
 	zlib1g && \
  echo "**** install app ****" && \
  mkdir -p \
